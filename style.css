@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+  background: 50% 50% no-repeat
+    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+}
+
+ /* Paleta de Cores GP */
+        :root {
+            --gp-dark: #1E1E1E;
+            --gp-red: #CC0000;
+            --gp-gray: #4A4A4A;
+        }
+        
+        body {
+            background-color: var(--gp-dark);
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Menu de Navegação */
+        .navbar {
+            background-color: #121212 !important;
+            border-bottom: 2px solid var(--gp-red);
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+            font-weight: 500;
+        }
+        .nav-link:hover {
+            color: var(--gp-red) !important;
+        }
+        .dropdown-menu {
+            background-color: #121212;
+            border: 1px solid var(--gp-red);
+        }
+        .dropdown-item {
+            color: #ffffff;
+        }
+        .dropdown-item:hover {
+            background-color: var(--gp-red);
+            color: #ffffff;
+        }
+
+        /* Hero Section (Topo do site) */
+        .hero-section {
+            padding: 100px 0;
+            background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.9)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .hero-title span {
+            color: var(--gp-red);
+        }
+
+        /* Botões Personalizados */
+        .btn-gp {
+            background-color: var(--gp-red);
+            color: #ffffff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-gp:hover {
+            background-color: #a30000;
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #121212;
+            border-top: 2px solid var(--gp-red);
+            padding: 30px 0;
+            margin-top: 50px;
+        }
